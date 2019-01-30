@@ -12,6 +12,22 @@ import {
   Button,
   Icon
 } from "semantic-ui-react";
+import Dropzone from "react-dropzone";
+import classNames from "classnames";
+
+onFileDrop = (acceptedFiles, rejectedFiles) => {
+  acceptedFiles.forEach(file => {
+    const reader = new FileReader();
+    reader.onload = () => {
+      const fileContent = reader.result;
+      console.log(fileContent);
+    };
+    reader.onabort = () => console.log("file reading was aborted");
+    reader.onerror = () => console.log("file reading has failed");
+
+    reader.readAsText(file);
+  });
+};
 
 const Content = () => (
   <div>
@@ -35,10 +51,28 @@ const Content = () => (
           marginTop: "1.5em"
         }}
       />
-      <Button primary size="huge">
-        <Icon name="file alternate outline" />
-        Import your data now
-      </Button>
+      <Dropzone onFileDrop={this.onFileDrop}>
+        {({ getRootProps, getInputProps, isDragActive }) => {
+          return (
+            <div
+              {...getRootProps()}
+              className={classNames("dropzone", {
+                "dropzone--isActive": isDragActive
+              })}
+            >
+              <input {...getInputProps()} />
+              {isDragActive ? (
+                <p>Drop files here...</p>
+              ) : (
+                <p>
+                  Try dropping some files here, or click to select files to
+                  upload.
+                </p>
+              )}
+            </div>
+          );
+        }}
+      </Dropzone>
     </Container>
   </div>
 );
