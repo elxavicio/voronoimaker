@@ -15,7 +15,8 @@ import {
 import Dropzone from "react-dropzone";
 import classNames from "classnames";
 
-onFileDrop = (acceptedFiles, rejectedFiles) => {
+const onFileDrop = (acceptedFiles, rejectedFiles) => {
+  console.log("File dropped");
   acceptedFiles.forEach(file => {
     const reader = new FileReader();
     reader.onload = () => {
@@ -51,7 +52,7 @@ const Content = () => (
           marginTop: "1.5em"
         }}
       />
-      <Dropzone onFileDrop={this.onFileDrop}>
+      <Dropzone onDrop={onFileDrop}>
         {({ getRootProps, getInputProps, isDragActive }) => {
           return (
             <div
@@ -61,14 +62,18 @@ const Content = () => (
               })}
             >
               <input {...getInputProps()} />
-              {isDragActive ? (
-                <p>Drop files here...</p>
-              ) : (
-                <p>
-                  Try dropping some files here, or click to select files to
-                  upload.
-                </p>
-              )}
+              <Segment placeholder>
+                {isDragActive ? (
+                  <Header icon>
+                    <Icon name="file text" />
+                    Drop files here...
+                  </Header>
+                ) : (
+                  <Header icon>
+                    <Icon name="file text" />I
+                  </Header>
+                )}
+              </Segment>
             </div>
           );
         }}
