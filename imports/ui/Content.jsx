@@ -14,19 +14,25 @@ import {
 } from "semantic-ui-react";
 import Dropzone from "react-dropzone";
 import classNames from "classnames";
+import Papa from "papaparse";
+
+const onCSVLoaded = results => {
+  let data = [];
+  results.data.map(row =>
+    data.push([parseFloat(row["stop_lon"]), parseFloat(row["stop_lat"])])
+  );
+};
 
 const onFileDrop = (acceptedFiles, rejectedFiles) => {
   console.log("File dropped");
   acceptedFiles.forEach(file => {
-    const reader = new FileReader();
-    reader.onload = () => {
-      const fileContent = reader.result;
-      console.log(fileContent);
-    };
-    reader.onabort = () => console.log("file reading was aborted");
-    reader.onerror = () => console.log("file reading has failed");
-
-    reader.readAsText(file);
+    Papa.parse(file, {
+      header: true,
+      error: function(err, file, inputElem, reason) {
+        console.log(err, reason);
+      },
+      complete: onCSVLoaded
+    });
   });
 };
 
@@ -40,7 +46,7 @@ const Content = () => (
           fontSize: "4em",
           fontWeight: "normal",
           marginBottom: 0,
-          marginTop: "3em"
+          marginTop: "1em"
         }}
       />
       <Header
@@ -70,7 +76,10 @@ const Content = () => (
                   </Header>
                 ) : (
                   <Header icon>
-                    <Icon name="file text" />I
+                    <Icon name="file text" />
+                    Drop or click your data file. It has to be in CSV format and
+                    contain one column named lat and another named lng with
+                    valid coordinates
                   </Header>
                 )}
               </Segment>
