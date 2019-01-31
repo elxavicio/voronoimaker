@@ -27,19 +27,44 @@ class Content extends React.Component {
 
   onCSVLoaded = results => {
     let data = [];
-    for (const row in results.data) {
-      data.push([parseFloat(row["stop_lon"]), parseFloat(row["stop_lat"])]);
+
+    // Extract only the lat and long fields
+    for (let i = 0; i < results.data.length; i++) {
+      let row = results.data[i];
+      data.push([parseFloat(row["stop_lat"]), parseFloat(row["stop_lon"])]);
     }
-    let map = L.map("map", {
-      center: [49.8419, 24.0315],
-      zoom: 16,
-      layers: [
-        L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png", {
-          attribution:
-            '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-        })
-      ]
+
+    // Filter elements with NaN values
+    const filteredData = data.filter(
+      item => !isNaN(item[0]) && !isNaN(item[1])
+    );
+
+    // Get mapBounds from list of points
+    let mapBounds = L.latLngBounds(filteredData).pad(0.1);
+
+    // Create the map
+    let map = new L.Map("map");
+
+    map.on("load", function(e) {
+      const mapInstance = document.getElementById("map");
+
+      const width = mapInstance.clientWidth;
+      const height = mapInstance.clientHeight;
     });
+
+    map.setView(mapBounds.getCenter(), 5).addLayer(
+      L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png", {
+        attribution:
+          '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+      })
+    );
+
+    // TODO adjust map view according to points we are dispalying
+    // map.fitBounds(mapBounds);
+    // map.setZoom(map.getBoundsZoom(mapBounds));
+
+    // d3.select(map.getPanes().overlayPane).append("svg"),
+
     setTimeout(() => {
       map.invalidateSize();
       console.log("Invalidate size");
