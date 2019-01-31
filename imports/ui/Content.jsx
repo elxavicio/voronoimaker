@@ -16,13 +16,13 @@ import {
 import Dropzone from "react-dropzone";
 import classNames from "classnames";
 import Papa from "papaparse";
-import { Map, TileLayer, Marker, Popup } from "react-leaflet";
+import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
 class Content extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { dataIsLoaded: false };
+    this.state = { hideMap: true };
   }
 
   onCSVLoaded = results => {
@@ -30,11 +30,25 @@ class Content extends React.Component {
     for (const row in results.data) {
       data.push([parseFloat(row["stop_lon"]), parseFloat(row["stop_lat"])]);
     }
-    this.setState({ dataIsLoaded: true });
+    let map = L.map("map", {
+      center: [49.8419, 24.0315],
+      zoom: 16,
+      layers: [
+        L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png", {
+          attribution:
+            '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        })
+      ]
+    });
+    setTimeout(() => {
+      map.invalidateSize();
+      console.log("Invalidate size");
+    }, 400);
+
+    this.setState({ hideMap: false });
   };
 
   onFileDrop = (acceptedFiles, rejectedFiles) => {
-    console.log("File dropped");
     acceptedFiles.forEach(file => {
       Papa.parse(file, {
         header: true,
@@ -49,15 +63,11 @@ class Content extends React.Component {
   render() {
     return (
       <div>
-        {this.state.dataIsLoaded && (
-          <Map center={[0, 0]} zoom={1}>
-            <TileLayer
-              attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-              url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"
-            />
-          </Map>
-        )}
-        {!this.state.dataIsLoaded && (
+        <div
+          id="map"
+          style={{ height: this.state.hideMap ? "0px" : "800px" }}
+        />
+        {this.state.hideMap && (
           <Container text style={{ marginTop: "7em" }} textAlign="center">
             <Header
               as="h1"
