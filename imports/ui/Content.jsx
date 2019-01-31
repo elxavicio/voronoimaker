@@ -12,15 +12,21 @@ import {
   Button,
   Icon
 } from "semantic-ui-react";
+
 import Dropzone from "react-dropzone";
 import classNames from "classnames";
 import Papa from "papaparse";
+import { Map, TileLayer, Marker, Popup } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
+
+let dataIsLoaded = false;
 
 const onCSVLoaded = results => {
   let data = [];
-  results.data.map(row =>
-    data.push([parseFloat(row["stop_lon"]), parseFloat(row["stop_lat"])])
-  );
+  for (row in results.data) {
+    data.push([parseFloat(row["stop_lon"]), parseFloat(row["stop_lat"])]);
+  }
+  dataIsLoaded = true;
 };
 
 const onFileDrop = (acceptedFiles, rejectedFiles) => {
@@ -38,6 +44,12 @@ const onFileDrop = (acceptedFiles, rejectedFiles) => {
 
 const Content = () => (
   <div>
+    <Map center={[0, 0]} zoom={1}>
+      <TileLayer
+        attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"
+      />
+    </Map>
     <Container text style={{ marginTop: "7em" }} textAlign="center">
       <Header
         as="h1"
