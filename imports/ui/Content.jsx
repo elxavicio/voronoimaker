@@ -18,6 +18,8 @@ import classNames from "classnames";
 import Papa from "papaparse";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+const d3 = require("d3");
+const d3delaunay = require("d3-delaunay");
 
 class Content extends React.Component {
   constructor(props) {
@@ -26,44 +28,72 @@ class Content extends React.Component {
   }
 
   onCSVLoaded = results => {
-    let data = [];
-
     // Extract only the lat and long fields
+    let rawPoints = [];
     for (let i = 0; i < results.data.length; i++) {
       let row = results.data[i];
-      data.push([parseFloat(row["stop_lat"]), parseFloat(row["stop_lon"])]);
+      rawPoints.push([
+        parseFloat(row["stop_lat"]),
+        parseFloat(row["stop_lon"])
+      ]);
     }
 
     // Filter elements with NaN values
-    const filteredData = data.filter(
+    const filteredPoints = rawPoints.filter(
       item => !isNaN(item[0]) && !isNaN(item[1])
     );
 
     // Get mapBounds from list of points
-    let mapBounds = L.latLngBounds(filteredData).pad(0.1);
+    let mapBounds = L.latLngBounds(filteredPoints).pad(0.1);
 
     // Create the map
     let map = new L.Map("map");
 
-    map.on("load", function(e) {
-      const mapInstance = document.getElementById("map");
+    map.setView(mapBounds.getCenter(), 5);
 
-      const width = mapInstance.clientWidth;
-      const height = mapInstance.clientHeight;
+    let tileLayer = L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png", {
+      attribution:
+        '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     });
 
-    map.setView(mapBounds.getCenter(), 5).addLayer(
-      L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png", {
-        attribution:
-          '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-      })
-    );
+    tileLayer.on("load", function(e) {
+      console.log();
+      const { x, y } = map.getSize();
+
+      let projectedPoints = [];
+      for (let i = 0; i < filteredPoints.length; i++) {
+        const { x, y } = map.latLngToContainerPoint(filteredPoints[i]);
+        projectedPoints.push([x, y]);
+      }
+      console.log(projectedPoints);
+
+      const delaunay = d3delaunay.Delaunay.from(projectedPoints);
+      console.log(delaunay);
+      const voronoi = delaunay.voronoi([0, 0, x, y]);
+
+      const voronoiPath = voronoi.render();
+      console.log(voronoiPath);
+
+      filteredPoints.forEach(point => {
+        L.circle([point[0], point[1]], { radius: 5 }).addTo(map);
+      });
+
+      let svg = d3
+        .select(map.getPanes().overlayPane)
+        .append("svg")
+        .attr("width", x)
+        .attr("height", y);
+      let pathSvg = svg
+        .append("path")
+        .attr("d", voronoiPath)
+        .attr("stroke", "indianred");
+    });
+
+    tileLayer.addTo(map);
 
     // TODO adjust map view according to points we are dispalying
     // map.fitBounds(mapBounds);
     // map.setZoom(map.getBoundsZoom(mapBounds));
-
-    // d3.select(map.getPanes().overlayPane).append("svg"),
 
     setTimeout(() => {
       map.invalidateSize();
