@@ -16,10 +16,11 @@ import {
 import Dropzone from "react-dropzone";
 import classNames from "classnames";
 import Papa from "papaparse";
-import L from "leaflet";
-import "leaflet/dist/leaflet.css";
 const d3 = require("d3");
 const d3delaunay = require("d3-delaunay");
+import Mapbox from "mapbox-gl";
+Mapbox.accessToken =
+  "pk.eyJ1IjoiZWx4YXZpY2lvIiwiYSI6ImNqcmhjdjM0bzJ1Z2IzeXBkMTcwMm91ejAifQ.MqNic1DI-myNldTKihJ-7w";
 
 class Content extends React.Component {
   constructor(props) {
@@ -33,8 +34,8 @@ class Content extends React.Component {
     for (let i = 0; i < results.data.length; i++) {
       let row = results.data[i];
       rawPoints.push([
-        parseFloat(row["stop_lat"]),
-        parseFloat(row["stop_lon"])
+        parseFloat(row["stop_lon"]),
+        parseFloat(row["stop_lat"])
       ]);
     }
 
@@ -43,62 +44,65 @@ class Content extends React.Component {
       item => !isNaN(item[0]) && !isNaN(item[1])
     );
 
-    // Get mapBounds from list of points
-    let mapBounds = L.latLngBounds(filteredPoints).pad(0.1);
-
-    // Create the map
-    let map = new L.Map("map");
-
-    map.setView(mapBounds.getCenter(), 5);
-
-    let tileLayer = L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png", {
-      attribution:
-        '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    let map = new Mapbox.Map({
+      container: "map",
+      center: [-4, 40],
+      zoom: 5,
+      style: "mapbox://styles/mapbox/light-v9",
+      scrollZoom: true
     });
+    map.addControl(new Mapbox.NavigationControl(), "top-right");
 
-    tileLayer.on("load", function(e) {
-      console.log();
-      const { x, y } = map.getSize();
+    map.setCenter([-4, 40]);
+    map.setZoom(5);
+
+    map.on("render", function(e) {
+      const pixelbbox = map.getContainer().getBoundingClientRect();
+      const width = pixelbbox.width;
+      const height = pixelbbox.height;
+
+      const geobbox = map.getBounds();
+
+      const projectPoint = ([x, y]) => [
+        ((x - geobbox._sw.lng) / (geobbox._ne.lng - geobbox._sw.lng)) * width,
+        height -
+          ((y - geobbox._sw.lat) / (geobbox._ne.lat - geobbox._sw.lat)) * height
+      ];
 
       let projectedPoints = [];
       for (let i = 0; i < filteredPoints.length; i++) {
-        const { x, y } = map.latLngToContainerPoint(filteredPoints[i]);
-        projectedPoints.push([x, y]);
+        projectedPoints.push(projectPoint(filteredPoints[i]));
       }
-      console.log(projectedPoints);
 
       const delaunay = d3delaunay.Delaunay.from(projectedPoints);
-      console.log(delaunay);
-      const voronoi = delaunay.voronoi([0, 0, x, y]);
-
+      const voronoi = delaunay.voronoi([0, 0, width, height]);
       const voronoiPath = voronoi.render();
-      console.log(voronoiPath);
 
-      filteredPoints.forEach(point => {
-        L.circle([point[0], point[1]], { radius: 5 }).addTo(map);
-      });
-
+      let canvasContainer = map.getCanvasContainer();
+      d3.select("svg").remove();
       let svg = d3
-        .select(map.getPanes().overlayPane)
+        .select(canvasContainer)
         .append("svg")
-        .attr("width", x)
-        .attr("height", y);
+        .attr("width", width)
+        .attr("height", height);
+      svg.attr("style", "position: relative;");
       let pathSvg = svg
         .append("path")
         .attr("d", voronoiPath)
         .attr("stroke", "indianred");
+      projectedPoints.map(([x, y]) =>
+        svg
+          .append("circle")
+          .attr("cx", x)
+          .attr("cy", y)
+          .attr("r", 2)
+          .attr("fill", "indianred")
+      );
     });
-
-    tileLayer.addTo(map);
 
     // TODO adjust map view according to points we are dispalying
     // map.fitBounds(mapBounds);
     // map.setZoom(map.getBoundsZoom(mapBounds));
-
-    setTimeout(() => {
-      map.invalidateSize();
-      console.log("Invalidate size");
-    }, 400);
 
     this.setState({ hideMap: false });
   };
@@ -118,10 +122,6 @@ class Content extends React.Component {
   render() {
     return (
       <div>
-        <div
-          id="map"
-          style={{ height: this.state.hideMap ? "0px" : "800px" }}
-        />
         {this.state.hideMap && (
           <Container text style={{ marginTop: "7em" }} textAlign="center">
             <Header
@@ -174,6 +174,13 @@ class Content extends React.Component {
             </Dropzone>
           </Container>
         )}
+        <div
+          id="map"
+          style={{
+            marginTop: "5em",
+            height: "600px"
+          }}
+        />
       </div>
     );
   }
