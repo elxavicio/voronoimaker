@@ -19,6 +19,7 @@ import Papa from "papaparse";
 const d3 = require("d3");
 const d3delaunay = require("d3-delaunay");
 import Mapbox from "mapbox-gl";
+import { latLngBounds } from "leaflet";
 Mapbox.accessToken =
   "pk.eyJ1IjoiZWx4YXZpY2lvIiwiYSI6ImNqcmhjdjM0bzJ1Z2IzeXBkMTcwMm91ejAifQ.MqNic1DI-myNldTKihJ-7w";
 
@@ -29,13 +30,28 @@ class Content extends React.Component {
   }
 
   onCSVLoaded = results => {
+    console.log(results);
+    const { fields } = results.meta;
+    const { data } = results;
+
+    // Find latitude longitude fields
+    let latField;
+    let lonField;
+    for (let i = 0; i < fields.length; i++) {
+      fields[i].toLowerCase().indexOf("lat") !== -1 && (latField = i);
+      (fields[i].toLowerCase().indexOf("lon") !== -1 ||
+        fields[i].toLowerCase().indexOf("lng") !== -1) &&
+        (lonField = i);
+    }
+    console.log(fields[latField], fields[lonField]);
+
     // Extract only the lat and long fields
     let rawPoints = [];
-    for (let i = 0; i < results.data.length; i++) {
-      let row = results.data[i];
+    for (let i = 0; i < data.length; i++) {
+      let row = data[i];
       rawPoints.push([
-        parseFloat(row["stop_lon"]),
-        parseFloat(row["stop_lat"])
+        parseFloat(row[fields[lonField]]),
+        parseFloat(row[fields[latField]])
       ]);
     }
 
@@ -43,36 +59,37 @@ class Content extends React.Component {
     const filteredPoints = rawPoints.filter(
       item => !isNaN(item[0]) && !isNaN(item[1])
     );
+    for (let i = 0; i < filteredPoints.length; i++) {
+      (filteredPoints[i][1] > 90 || filteredPoints[i][1] < -90) &&
+        console.log(filteredPoints[i]);
+    }
+
+    // Get lat long bounds from data
+    // const leafletBounds = latLngBounds([filteredPoints]);
 
     let map = new Mapbox.Map({
       container: "map",
-      center: [-4, 40],
-      zoom: 5,
+      // bounds: [
+      //   [leafletBounds._southWest.lng, leafletBounds._southWest.lat],
+      //   [leafletBounds._northEast.lng, leafletBounds._northEast.lat]
+      // ],
+      renderWorldCopies: false,
       style: "mapbox://styles/mapbox/light-v9",
       scrollZoom: true
     });
     map.addControl(new Mapbox.NavigationControl(), "top-right");
-
-    map.setCenter([-4, 40]);
-    map.setZoom(5);
 
     map.on("render", function(e) {
       const pixelbbox = map.getContainer().getBoundingClientRect();
       const width = pixelbbox.width;
       const height = pixelbbox.height;
 
-      const geobbox = map.getBounds();
-
-      const projectPoint = ([x, y]) => [
-        ((x - geobbox._sw.lng) / (geobbox._ne.lng - geobbox._sw.lng)) * width,
-        height -
-          ((y - geobbox._sw.lat) / (geobbox._ne.lat - geobbox._sw.lat)) * height
-      ];
-
       let projectedPoints = [];
       for (let i = 0; i < filteredPoints.length; i++) {
-        projectedPoints.push(projectPoint(filteredPoints[i]));
+        const { x, y } = map.project(filteredPoints[i]);
+        projectedPoints.push([x, y]);
       }
+      console.log(projectedPoints);
 
       const delaunay = d3delaunay.Delaunay.from(projectedPoints);
       const voronoi = delaunay.voronoi([0, 0, width, height]);
