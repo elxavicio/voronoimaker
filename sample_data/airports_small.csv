@@ -1,0 +1,625 @@
+name,lat,lon
+Port Moresby Jacksons International Airport,-9.44338035583496,147.220001220703
+Keflavik International Airport,63.985000610352,-22.605600357056
+Priština International Airport,42.5728,21.035801
+Osman Ibrahim,0,0
+Cyll,53.310365,-110.072021
+CMN,0,0
+Guodu air base,36.001741,117.63201
+Edmonton International Airport,53.3097000122,-113.580001831
+Halifax / Stanfield International Airport,44.8807983398,-63.5085983276
+Ottawa Macdonald-Cartier International Airport,45.3224983215332,-75.6691970825195
+Montreal / Pierre Elliott Trudeau International Airport,45.4706001282,-73.7407989502
+Vancouver International Airport,49.193901062,-123.183998108
+Winnipeg / James Armstrong Richardson International Airport,49.9099998474,-97.2398986816
+Calgary International Airport,51.113899231,-114.019996643
+Victoria International Airport,48.646900177,-123.426002502
+St. John's International Airport,47.618598938,-52.7518997192
+Lester B. Pearson International Airport,43.6772003174,-79.6305999756
+Houari Boumediene Airport,36.6910018920898,3.21540999412537
+Ouagadougou Airport,12.3532,-1.51242
+Kotoka International Airport,5.60518980026245,-0.166786000132561
+Nnamdi Azikiwe International Airport,9.00679016113281,7.26316976547241
+Akwa Ibom International Airport,4.8725,8.093
+Mallam Aminu International Airport,12.0476,8.52462
+Murtala Muhammed International Airport,6.57737016677856,3.32116007804871
+Diori Hamani International Airport,13.4815,2.18361
+Tunis Carthage International Airport,36.851001739502,10.2271995544434
+Brussels Airport,50.9014015198,4.48443984985
+Brussels South Charleroi Airport,50.459202,4.45382
+Liège Airport,50.6374015808106,5.44322013854981
+Berlin-Schönefeld Airport,52.380001,13.5225
+Dresden Airport,51.1328010559082,13.7672004699707
+Frankfurt am Main Airport,50.033333,8.570556
+Münster Osnabrück Airport,52.134601593,7.68483018875
+Hamburg Airport,53.630401611328,9.9882297515869
+Cologne Bonn Airport,50.8658981323,7.1427397728
+Düsseldorf Airport,51.289501,6.76678
+Munich Airport,48.353802,11.7861
+Nuremberg Airport,49.498699,11.078056
+Leipzig/Halle Airport,51.423889,12.236389
+Stuttgart Airport,48.6898994446,9.22196006775
+Berlin-Tegel Airport,52.5597,13.2877
+Hannover Airport,52.461101532,9.68507957458
+Bremen Airport,53.0475006104,8.78666973114
+Dortmund Airport,51.5182991028,7.61223983765
+Karlsruhe Baden-Baden Airport,48.7793998718,8.08049964905
+Lennart Meri Tallinn Airport,59.4132995605,24.8327999115
+Helsinki Vantaa Airport,60.317199707031,24.963300704956
+Cairo,0,0
+Belfast International Airport,54.6575012207,-6.21582984924
+George Best Belfast City Airport,54.6180992126465,-5.87249994277954
+Birmingham International Airport,52.4538993835,-1.74802994728
+Manchester Airport,53.3536987304688,-2.27495002746582
+Robin Hood Doncaster Sheffield Airport,53.4805378105,-1.01065635681
+Cardiff International Airport,51.3967018127441,-3.34332990646362
+Bristol Airport,51.382702,-2.71909
+Liverpool John Lennon Airport,53.3335990905762,-2.8497200012207
+London Luton Airport,51.874698638916,-0.368333011865616
+Bournemouth Airport,50.7799987792969,-1.84249997138977
+Southampton Airport,50.9502983093262,-1.35679996013641
+London Gatwick Airport,51.148102,-0.190278
+London Heathrow Airport,51.4706,-0.461941
+Leeds Bradford Airport,53.8658981323242,-1.66057002544403
+Newcastle Airport,55.0374984741211,-1.69166994094849
+East Midlands Airport,52.8311004639,-1.32806003094
+Aberdeen Dyce Airport,57.2019004821777,-2.19777989387512
+Glasgow International Airport,55.8718986511,-4.43306016922
+Edinburgh Airport,55.9500007629395,-3.37249994277954
+Norwich International Airport,52.6758003235,1.28278005123
+London Stansted Airport,51.8849983215,0.234999999404
+Exeter International Airport,50.7344017028809,-3.41388988494873
+RAF Lakenheath,52.4093017578,0.56099998951
+RAF Mildenhall,52.3619003295898,0.486405998468399
+RAF Fairford,51.6822013855,-1.79003000259
+RAF Brize Norton,51.75,-1.58362
+Amsterdam Airport Schiphol,52.308601,4.76389
+Eindhoven Airport,51.4500999451,5.37452983856
+Cork Airport,51.8413009643555,-8.49110984802246
+Dublin Airport,53.421299,-6.27007
+Shannon Airport,52.702,-8.92482
+Billund Airport,55.7402992249,9.15178012848
+Copenhagen Kastrup Airport,55.617900848389,12.656000137329
+Aalborg Airport,57.0927589138,9.84924316406
+Luxembourg-Findel International Airport,49.6233333,6.2044444
+Bodø Airport,67.2692031860352,14.3653001785278
+Bergen Airport Flesland,60.29339981,5.218140125
+Oslo Gardermoen Airport,60.193901062012,11.100399971008
+Tromsø Airport,69.6832962036133,18.9188995361328
+Trondheim Airport Værnes,63.4578018,10.9239998
+Stavanger Airport Sola,58.876701354,5.6377801895
+Gdańsk Lech Wałęsa Airport,54.3776016235352,18.4661998748779
+Kraków John Paul II International Airport,50.077702,19.7848
+Katowice International Airport,50.4743,19.08
+Modlin Airport,52.451099,20.6518
+Poznań-Ławica Airport,52.4210014343,16.8262996674
+Warsaw Chopin Airport,52.1656990051,20.9671001434
+Copernicus Wrocław Airport,51.1026992798,16.885799408
+Gothenburg-Landvetter Airport,57.662799835205,12.279800415039
+Malmö Sturup Airport,55.536305364,13.3761978149
+Luleå Airport,65.543800354004,22.121999740601
+Stockholm-Arlanda Airport,59.651901245117,17.918600082397
+Ramstein Air Base,49.4369010925293,7.60027980804443
+Riga International Airport,56.9235992431641,23.9710998535156
+Vilnius International Airport,54.634102,25.285801
+Cape Town International Airport,-33.9648017883,18.6016998291
+George Airport,-34.0056,22.378902
+OR Tambo International Airport,-26.1392,28.246
+King Shaka International Airport,-29.6144444444,31.1197222222
+OR Tambo International Airport,-26.1392,28.246
+Sir Seretse Khama International Airport,-24.555201,25.9182
+Sir Seewoosagur Ramgoolam International Airport,-20.430201,57.683601
+Kenneth Kaunda International Airport Lusaka,-15.3308000565,28.4526004791
+Ivato Airport,-18.7969,47.478802
+Quatro de Fevereiro Airport,-8.85837,13.2312
+Maputo Airport,-25.920799,32.572601
+Seychelles International Airport,-4.67434,55.521801
+N'Djamena International Airport,12.1337,15.034
+Robert Gabriel Mugabe International Airport,-17.931801,31.0928
+Hosea Kutako International Airport,-22.4799,17.4709
+Ndjili International Airport,-4.38575,15.4446
+Modibo Keita International Airport,12.5335,-7.94994
+[Duplicate] Pic,55.505694,-4.586792
+CWL Cardiff International Airport,0,0
+La Palma Airport,28.626499,-17.7556
+Gran Canaria Airport,27.9319000244141,-15.3865995407104
+Tenerife South Airport,28.044500351,-16.5725002289
+Tenerife Norte Airport,28.4827003479,-16.3414993286
+Lungi International Airport,8.61644,-13.1955
+Roberts International Airport,6.23379,-10.3623
+Mohammed V International Airport,33.3675003051758,-7.58997011184692
+Blaise Diagne International Airport,14.67,-17.073333
+Léopold Sédar Senghor International Airport,14.7397003173828,-17.4902000427246
+Nouakchott–Oumtounsy International Airport,18.31,-15.9697222
+Airport,0,0
+Amílcar Cabral International Airport,16.7414,-22.9494
+Addis Ababa Bole International Airport,8.97789001465,38.7993011475
+Cairo International Airport,30.1219005584717,31.4055995941162
+Hurghada International Airport,27.1783008575439,33.7994003295898
+Luxor International Airport,25.671,32.7066
+Jomo Kenyatta International Airport,-1.31923997402,36.9277992249
+Mombasa Moi International Airport,-4.03483009338379,39.5942001342773
+Tripoli International Airport,32.6635017395,13.1590003967
+Kigali International Airport,-1.96863,30.1395
+Juba International Airport,4.87201023102,31.6011009216
+Khartoum International Airport,15.5895004272461,32.5531997680664
+Julius Nyerere International Airport,-6.87811,39.202599
+Abeid Amani Karume International Airport,-6.22202,39.224899
+Entebbe International Airport,0.042386,32.443501
+Sungai Siring International Airport,-0.373611,117.255556
+Libr,0,0
+Albuquerque International Sunport,35.040199,-106.609001
+Joint Base Andrews,38.810799,-76.866997
+Fort Worth Alliance Airport,32.9875984192,-97.3188018799
+Augusta Regional At Bush Field,33.3698997497559,-81.9645004272461
+Rick Husband Amarillo International Airport,35.219398,-101.706001
+Hartsfield Jackson Atlanta International Airport,33.6367,-84.428101
+Austin Bergstrom International Airport,30.1944999694824,-97.6698989868164
+Asheville Regional Airport,35.4361991882324,-82.5418014526367
+Beale Air Force Base,39.136100769,-121.43699646
+Barksdale Air Force Base,32.5018005371,-93.6626968384
+Bradley International Airport,41.9388999939,-72.6831970215
+Boeing Field King County International Airport,47.5299987792969,-122.302001953125
+Bangor International Airport,44.8073997497559,-68.8281021118164
+Birmingham-Shuttlesworth International Airport,33.56290054,-86.75350189
+Billings Logan International Airport,45.8077011108398,-108.542999267578
+Scott AFB/Midamerica Airport,38.5452,-89.835197
+Central Illinois Regional Airport at Bloomington-Normal,40.47710037,-88.91590118
+Nashville International Airport,36.1245002746582,-86.6781997680664
+Boise Air Terminal/Gowen Field,43.5644,-116.223
+General Edward Lawrence Logan International Airport,42.36429977,-71.00520325
+Buffalo Niagara International Airport,42.94049835,-78.73220062
+Baltimore/Washington International Thurgood Marshall Airport,39.1754,-76.668297
+Columbia Metropolitan Airport,33.9388008117676,-81.119499206543
+Columbus Air Force Base,33.6437988281,-88.4438018799
+Lovell Field,35.0353012084961,-85.2037963867187
+Charleston Air Force Base-International Airport,32.89860153,-80.04049683
+The Eastern Iowa Airport,41.8847007751465,-91.7108001708984
+Cleveland Hopkins International Airport,41.4117012024,-81.8498001099
+Charlotte Douglas International Airport,35.2140007019043,-80.9430999755859
+John Glenn Columbus International Airport,39.998001,-82.891899
+Corpus Christi International Airport,27.7703990936279,-97.5011978149414
+Yeager Airport,38.3731002807617,-81.5932006835937
+Cincinnati Northern Kentucky International Airport,39.0488014221,-84.6678009033
+Cannon Air Force Base,34.3828010559,-103.321998596
+Daytona Beach International Airport,29.179899,-81.058098
+Dallas Love Field,32.847099,-96.851799
+James M Cox Dayton International Airport,39.902400970459,-84.2193984985352
+Dubuque Regional Airport,42.40200043,-90.70950317
+Ronald Reagan Washington National Airport,38.8521,-77.037697
+Denver International Airport,39.861698150635,-104.672996521
+Dallas Fort Worth International Airport,32.896801,-97.038002
+DLF Airport,29.359501,-100.778002
+Duluth International Airport,46.8420982361,-92.1936035156
+Dover Air Force Base,39.12950134,-75.46600342
+Des Moines International Airport,41.5340003967285,-93.6631011962891
+Detroit Metropolitan Wayne County Airport,42.2123985290527,-83.353401184082
+Dyess Air Force Base,32.4207992554,-99.854598999
+Edwards Air Force Base,34.905399,-117.884003
+Vance Air Force Base,36.3391990662,-97.9164962769
+Erie International Tom Ridge Field,42.0831270134,-80.1738667488
+Newark Liberty International Airport,40.6925010681152,-74.168701171875
+Wright-Patterson Air Force Base,39.8260993958,-84.0483016968
+Fort Lauderdale Hollywood International Airport,26.072599,-80.152702
+Fort Smith Regional Airport,35.3366012573242,-94.3674011230469
+Fort Worth Meacham International Airport,32.819801,-97.362396
+Fort Wayne International Airport,40.97850037,-85.19509888
+Spokane International Airport,47.6198997497559,-117.533996582031
+Gulfport Biloxi International Airport,30.4073009490967,-89.0700988769531
+Austin Straubel International Airport,44.4850997924805,-88.1296005249024
+Seymour Johnson Air Force Base,35.33940125,-77.96060181
+Piedmont Triad International Airport,36.0978012084961,-79.9373016357422
+Greenville Spartanburg International Airport,34.8956985474,-82.2189025879
+Grissom Air Reserve Base,40.6481018066,-86.1520996094
+Range Regional Airport,47.38660049,-92.83899689
+Holloman Air Force Base,32.8525009155,-106.107002258
+William P Hobby Airport,29.64539909,-95.27890015
+Huntsville International Carl T Jones Field,34.637199401855,-86.775100708008
+Tri-State/Milton J. Ferguson Field,38.36669922,-82.55799866
+Washington Dulles International Airport,38.94449997,-77.45580292
+George Bush Intercontinental Houston Airport,29.9843997955322,-95.3414001464844
+Wichita Eisenhower National Airport,37.649899,-97.433098
+Indianapolis International Airport,39.7173,-86.294403
+Jackson-Medgar Wiley Evers International Airport,32.3111991882,-90.0758972168
+Jacksonville International Airport,30.4941005706787,-81.6878967285156
+John F Kennedy International Airport,40.63980103,-73.77890015
+Joplin Regional Airport,37.151798248291,-94.4982986450195
+McCarran International Airport,36.08010101,-115.1520004
+Los Angeles International Airport,33.94250107,-118.4079971
+Lubbock Preston Smith International Airport,33.663601,-101.822998
+Rickenbacker International Airport,39.813801,-82.927803
+Blue Grass Airport,38.0364990234375,-84.6059036254883
+Langley Air Force Base,37.082901001,-76.360496521
+Lafayette Regional Airport,30.20529938,-91.98760223
+La Guardia Airport,40.77719879,-73.87259674
+Bill & Hillary Clinton National Airport/Adams Field,34.7294006348,-92.2242965698
+Altus Air Force Base,34.667098999,-99.2667007446
+Luke Air Force Base,33.5349998474,-112.383003235
+MBS International Airport,43.532901763916,-84.0795974731445
+Mac Dill Air Force Base,27.84930038,-82.52120209
+Kansas City International Airport,39.2976,-94.713898
+Orlando International Airport,28.4293994903564,-81.3089981079102
+Chicago Midway International Airport,41.785999,-87.752403
+Memphis International Airport,35.0424003601074,-89.9766998291016
+Dobbins Air Reserve Base,33.91540146,-84.51629639
+Montgomery Regional (Dannelly Field) Airport,32.30059814,-86.39399719
+Miami International Airport,25.7931995391846,-80.2906036376953
+General Mitchell International Airport,42.9472007751465,-87.896598815918
+Quad City International Airport,41.4485015869141,-90.5074996948242
+Monroe Regional Airport,32.5108985900879,-92.0376968383789
+Mobile Regional Airport,30.691200256348,-88.242797851562
+Dane County Regional Truax Field,43.1399002075195,-89.3375015258789
+Minneapolis-St Paul International/Wold-Chamberlain Airport,44.882,-93.221802
+Louis Armstrong New Orleans International Airport,29.9934005737305,-90.2580032348633
+Mountain Home Air Force Base,43.043598,-115.872002
+Metropolitan Oakland International Airport,37.721298,-122.221001
+Will Rogers World Airport,35.3931007385254,-97.600700378418
+Eppley Airfield,41.3032,-95.894096
+Ontario International Airport,34.0559997558594,-117.600997924805
+Chicago O'Hare International Airport,41.9786,-87.9048
+Norfolk International Airport,36.8945999145508,-76.2012023925781
+Tyndall Air Force Base,30.0695991516,-85.5754013062
+Palm Beach International Airport,26.6832008361816,-80.0955963134766
+Portland International Airport,45.58869934,-122.5979996
+Newport News Williamsburg International Airport,37.13190079,-76.49299622
+Philadelphia International Airport,39.871898651123,-75.241096496582
+Phoenix Sky Harbor International Airport,33.4342994689941,-112.012001037598
+General Wayne A. Downing Peoria International Airport,40.6641998291,-89.6932983398
+Pittsburgh International Airport,40.49150085,-80.23290253
+Portland International Jetport Airport,43.64619827,-70.30930328
+Raleigh Durham International Airport,35.8776016235352,-78.7874984741211
+Chicago Rockford International Airport,42.1954002380371,-89.0971984863281
+Richmond International Airport,37.505199432373,-77.3197021484375
+Randolph Air Force Base,29.52969933,-98.27890015
+Reno Tahoe International Airport,39.4990997314453,-119.767997741699
+Roanoke–Blacksburg Regional Airport,37.3255,-79.975403
+Greater Rochester International Airport,43.1189002990723,-77.6724014282227
+Rochester International Airport,43.9082984924316,-92.5
+Southwest Florida International Airport,26.5361995697021,-81.7552032470703
+San Diego International Airport,32.7336006165,-117.190002441
+San Antonio International Airport,29.5337009429932,-98.4698028564453
+Savannah Hilton Head International Airport,32.12760162,-81.20210266
+South Bend Regional Airport,41.7086982727051,-86.3172988891602
+Louisville International Standiford Field,38.1744,-85.736
+Seattle Tacoma International Airport,47.449001,-122.308998
+Orlando Sanford International Airport,28.7775993347168,-81.2375030517578
+San Francisco International Airport,37.6189994812012,-122.375
+Springfield Branson National Airport,37.24570084,-93.38860321
+Norman Y. Mineta San Jose International Airport,37.362598,-121.929001
+Fairchild Air Force Base,47.6151008606,-117.65599823
+Salt Lake City International Airport,40.7883987426758,-111.977996826172
+Sacramento International Airport,38.6954002380371,-121.591003417969
+John Wayne Airport-Orange County Airport,33.67570114,-117.8679962
+Abraham Lincoln Capital Airport,39.84410095,-89.67790222
+Sheppard Air Force Base-Wichita Falls Municipal Airport,33.9888,-98.491898
+Sarasota Bradenton International Airport,27.3953990936279,-82.5543975830078
+Shaw Air Force Base,33.97269821,-80.47059631
+St Louis Lambert International Airport,38.748697,-90.370003
+Spirit of St Louis Airport,38.662101745605,-90.652000427246
+Travis Air Force Base,38.262699127197,-121.92700195312
+Sioux Gateway Col. Bud Day Field,42.40259933,-96.38439941
+Syracuse Hancock International Airport,43.111198425293,-76.1063003540039
+Whiteman Air Force Base,38.73030090332,-93.547897338867
+McChord Air Force Base,47.1376991272,-122.475997925
+Tinker Air Force Base,35.414699554443,-97.386596679688
+Tallahassee Regional Airport,30.3964996337891,-84.3503036499024
+Toledo Express Airport,41.58679962,-83.80780029
+Tampa International Airport,27.9755001068115,-82.533203125
+Tri-Cities Regional TN/VA Airport,36.475201,-82.407401
+Tulsa International Airport,36.1983985900879,-95.8880996704102
+Tucson International Airport,32.1161003112793,-110.94100189209
+McGhee Tyson Airport,35.81100082,-83.9940033
+Vandenberg Air Force Base,34.7373008728,-120.583999634
+Destin-Ft Walton Beach Airport,30.4832,-86.525398
+Robins Air Force Base,32.6400985718,-83.5919036865
+Tirana International Airport Mother Teresa,41.4146995544,19.7206001282
+Burgas Airport,42.5695991516113,27.5151996612549
+Sofia Airport,42.6966934204102,23.4114360809326
+Varna Airport,43.232101,27.8251
+Larnaca International Airport,34.8750991821289,33.6249008178711
+Paphos International Airport,34.7179985046387,32.4856986999512
+RAF Akrotiri,34.590401,32.9879
+Zagreb Airport,45.7429008484,16.0687999725
+Alicante International Airport,38.2821998596191,-0.55815601348877
+Barcelona International Airport,41.2971,2.07846
+Adolfo Suárez Madrid–Barajas Airport,40.471926,-3.56264
+Málaga Airport,36.6749000549316,-4.49911022186279
+Palma De Mallorca Airport,39.551700592,2.73881006241
+Santiago de Compostela Airport,42.8963012695313,-8.41514015197754
+Bordeaux-Mérignac Airport,44.8283004761,-0.715556025505
+Toulouse-Blagnac Airport,43.629101,1.36382
+Lyon Saint-Exupéry Airport,45.725556,5.081111
+Marseille Provence Airport,43.439271922,5.22142410278
+Nice-Côte d'Azur Airport,43.6584014893,7.21586990356
+Avord (BA 702) Air Base,47.053299,2.6325
+Charles de Gaulle International Airport,49.012798,2.55
+Paris-Orly Airport,48.7233333,2.3794444
+EuroAirport Basel-Mulhouse-Freiburg Airport,47.59,7.5291667
+Eleftherios Venizelos International Airport,37.9364013672,23.9444999695
+Heraklion International Nikos Kazantzakis Airport,35.3396987915,25.1802997589
+Thessaloniki Macedonia International Airport,40.5196990966797,22.9708995819092
+Budapest Liszt Ferenc International Airport,47.42976,19.261093
+Bari Karol Wojtyła Airport,41.138901,16.760599
+Catania-Fontanarossa Airport,37.466801,15.0664
+Falcone–Borsellino Airport,38.175999,13.091
+Cagliari Elmas Airport,39.251499,9.05428
+Malpensa International Airport,45.6306,8.72811
+Il Caravaggio International Airport,45.673901,9.70417
+Turin Airport,45.200802,7.64963
+Genoa Cristoforo Colombo Airport,44.4133,8.8375
+Milano Linate Airport,45.445099,9.27674
+Bologna Guglielmo Marconi Airport,44.5354,11.2887
+Treviso-Sant'Angelo Airport,45.648399,12.1944
+Verona Villafranca Airport,45.395699,10.8885
+Venice Marco Polo Airport,45.505299,12.3519
+Ciampino–G. B. Pastine International Airport,41.7994,12.5949
+Leonardo da Vinci–Fiumicino Airport,41.8002778,12.2388889
+Naples International Airport,40.886002,14.2908
+Pisa International Airport,43.683899,10.3927
+Ljubljana Jože Pučnik Airport,46.223701,14.4576
+Václav Havel Airport Prague,50.1008,14.26
+Ben Gurion International Airport,32.0113983154297,34.8866996765137
+Ovda International Airport,29.940299987793,34.9357986450195
+Malta International Airport,35.857498,14.4775
+Vienna International Airport,48.110298156738,16.569700241089
+Faro Airport,37.0144004822,-7.96590995789
+Lajes Airport,38.761799,-27.090799
+João Paulo II Airport,37.7411994934,-25.6979007721
+Francisco de Sá Carneiro Airport,41.2481002808,-8.68138980865
+Humberto Delgado Airport (Lisbon Portela Airport),38.7813,-9.13592
+Sarajevo International Airport,43.8246002197266,18.3314990997314
+Henri Coandă International Airport,44.5711111,26.085
+Geneva Cointrin International Airport,46.2380981445313,6.10895013809204
+Zürich Airport,47.464699,8.54917
+Esenboğa International Airport,40.1281013489,32.995098114
+Adana Airport,36.9822006226,35.2803993225
+Antalya International Airport,36.898701,30.800501
+Gaziantep International Airport,36.9472007751,37.4786987305
+Atatürk International Airport,40.976898,28.8146
+Adnan Menderes International Airport,38.2924003601,27.156999588
+Dalaman International Airport,36.7131004333,28.7924995422
+Erzurum International Airport,39.9565010071,41.1702003479
+Trabzon International Airport,40.9950981140137,39.7896995544434
+Süleyman Demirel International Airport,37.8554000854,30.3684005737
+Milas Bodrum International Airport,37.2505989075,27.6643009186
+Sabiha Gökçen International Airport,40.898601532,29.3092002869
+Belgrade Nikola Tesla Airport,44.8184013367,20.3090991974
+Podgorica Airport,42.359402,19.2519
+M. R. Štefánik Airport,48.1702003479004,17.2126998901367
+cmn,0,0
+Punta Cana International Airport,18.5673999786,-68.3634033203
+Las Américas International Airport,18.42970085144,-69.668899536133
+La Aurora Airport,14.5833,-90.527496
+Norman Manley International Airport,17.9356994628906,-76.7874984741211
+General Juan N Alvarez International Airport,16.7570991516113,-99.7539978027344
+Don Miguel Hidalgo Y Costilla International Airport,20.5217990875244,-103.310997009277
+General Ignacio P. Garcia International Airport,29.0958995819,-111.047996521
+Licenciado Benito Juarez International Airport,19.4363,-99.072098
+General Mariano Escobedo International Airport,25.7784996033,-100.107002258
+Licenciado Gustavo Díaz Ordaz International Airport,20.6800994873047,-105.253997802734
+Los Cabos International Airport,23.1518001556396,-109.721000671387
+General Abelardo L. Rodríguez International Airport,32.5410995483398,-116.970001220703
+Cancún International Airport,21.0365009308,-86.8770980835
+Tocumen International Airport,9.0713596344,-79.3834991455
+Daniel Oduber Quiros International Airport,10.5933,-85.544403
+Monseñor Óscar Arnulfo Romero International Airport,13.4409,-89.055702
+José Martí International Airport,22.989200592041,-82.4091033935547
+Juan Gualberto Gomez International Airport,23.0344009399414,-81.435302734375
+Owen Roberts International Airport,19.2928009033,-81.3576965332
+Cozumel Airport,0,0
+Lynden Pindling International Airport,25.0389995575,-77.4662017822
+Philip S. W. Goldson International Airport,17.5391006469727,-88.3081970214844
+Rarotonga International Airport,-21.2026996613,-159.805999756
+Oshogbo Airport,0,0
+Faa'a International Airport,-17.553699,-149.606995
+Auckland International Airport,-37.0080986023,174.792007446
+Christchurch International Airport,-43.4893989562988,172.531997680664
+Wellington International Airport,-41.3272018433,174.804992676
+Bahrain International Airport,26.2707996368408,50.6335983276367
+King Fahd International Airport,26.4712009429932,49.7979011535645
+King Abdulaziz Air Base,26.2653999329,50.1520004272
+King Abdulaziz International Airport,21.6796,39.156502
+Prince Mohammad Bin Abdulaziz Airport,24.5534,39.705101
+King Khaled International Airport,24.9575996398926,46.6987991333008
+Imam Khomeini International Airport,35.4160995483398,51.1521987915039
+Mehrabad International Airport,35.6892013549805,51.3134002685547
+Mashhad International Airport,36.2351989746094,59.640998840332
+Shiraz Shahid Dastghaib International Airport,29.5391998291016,52.5898017883301
+Tabriz International Airport,38.1338996887207,46.2350006103516
+Queen Alia International Airport,31.7226009369,35.9931983948
+Kuwait International Airport,29.2266006469727,47.9688987731934
+Beirut Rafic Hariri International Airport,33.8208999633789,35.4883995056152
+Duqm International Airport,19.501944,57.634167
+Rustaq Airport,23.640556,57.4875
+Abu Dhabi International Airport,24.4330005645752,54.6511001586914
+Dubai International Airport,25.2527999878,55.3643989563
+Al Maktoum International Airport,24.896356,55.161389
+Sharjah International Airport,25.3285999298096,55.5172004699707
+Muscat International Airport,23.5932998657227,58.2844009399414
+Sialkot Airport,32.5355567932,74.3638916016
+Baghdad International Airport,33.2625007629,44.2346000671
+Basrah International Airport,30.5491008758545,47.6621017456055
+Aleppo International Airport,36.1806983947754,37.2243995666504
+Damascus International Airport,33.4114990234375,36.5155982971191
+Bassel Al-Assad International Airport,35.4011001586914,35.9486999511719
+Fairbanks International Airport,64.81510162,-147.8560028
+Ted Stevens Anchorage International Airport,61.1744003295898,-149.996002197266
+Antonio B. Won Pat International Airport,13.4834003448,144.796005249
+Laguindingan Airport,8.612203,124.456496
+Northern Cagayan International Airport,18.182388,121.745853
+MNL,0,0
+NAIA,0,0
+Daniel K Inouye International Airport,21.32062,-157.924228
+New Islamabad International Airport,33.560713,72.851613
+Hamad International Airport,25.273056,51.608056
+Kinmen Airport,24.4279,118.359001
+Kaohsiung International Airport,22.5771007537842,120.349998474121
+Taiwan Taoyuan International Airport,25.0777,121.233002
+Narita International Airport,35.7647018433,140.386001587
+Kansai International Airport,34.4272994995117,135.244003295898
+New Chitose Airport,42.7751998901367,141.692001342773
+Fukuoka Airport,33.5858993530273,130.45100402832
+Kagoshima Airport,31.8034000396729,130.718994140625
+Chubu Centrair International Airport,34.8583984375,136.804992675781
+Mt. Fuji Shizuoka Airport,34.7960434679,138.18775177
+Osaka International Airport,34.7854995727539,135.438003540039
+Tokyo Haneda International Airport,35.552299,139.779999
+Yokota Air Base,35.7485008239746,139.348007202148
+Muan International Airport,34.991406,126.382814
+Kunsan Air Base,35.9038009643555,126.615997314453
+Jeju International Airport,33.5112991333008,126.49299621582
+Gimhae International Airport,35.1795005798,128.93800354
+Incheon International Airport,37.4691009521484,126.450996398926
+Osan Air Base,37.090599,127.029999
+Gimpo International Airport,37.5583,126.791
+Cheongju International Airport/Cheongju Air Base (K-59/G-513),36.717008,127.498741
+Naha Airport,26.1958007812,127.646003723
+Kadena Air Base,26.3556,127.767998
+Diosdado Macapagal International Airport,15.186,120.559998
+Ninoy Aquino International Airport,14.5086,121.019997
+Francisco Bangoy International Airport,7.1255202293396,125.646003723145
+Mactan Cebu International Airport,10.307499885559,123.97899627686
+Lipetsk Air Base,52.6349983215332,39.4449996948242
+Grozny North Airport,43.388302,45.698601
+Ukrainka Air Base,51.169997,128.445007
+Olenya Air Base,68.151802062988,33.463901519775
+"Ash Sharqiyah Region, Saudi Arabia",1,2.9999999999
+Ministro Pistarini International Airport,-34.8222,-58.5358
+Val de Cans/Júlio Cezar Ribeiro International Airport,-1.37925004959,-48.4762992859
+Presidente Juscelino Kubistschek International Airport,-15.8691673278809,-47.9208335876465
+Tancredo Neves International Airport,-19.6244430541992,-43.9719429016113
+Afonso Pena Airport,-25.5284996033,-49.1758003235
+Hercílio Luz International Airport,-27.6702785491943,-48.5525016784668
+Rio Galeão – Tom Jobim International Airport,-22.8099994659,-43.2505569458
+Guarulhos - Governador André Franco Montoro International Airport,-23.4355564117432,-46.4730567932129
+Governador Aluízio Alves International Airport,-5.768056,-35.376111
+Congonhas Airport,-23.6261100769043,-46.6563873291016
+Deputado Luiz Eduardo Magalhães International Airport,-12.9086112976,-38.3224983215
+Comodoro Arturo Merino Benítez International Airport,-33.3930015563965,-70.7857971191406
+Cotopaxi International Airport,-0.906833,-78.615799
+Mariscal Sucre International Airport,-0.129166666667,-78.3575
+El Dorado International Airport,4.70159,-74.1469
+Viru Viru International Airport,-17.6448,-63.135399
+Jorge Chávez International Airport,-12.0219,-77.114305
+Alejandro Velasco Astete International Airport,-13.5356998444,-71.9387969971
+Carrasco International /General C L Berisso Airport,-34.838402,-56.0308
+General José Antonio Anzoategui International Airport,10.111111,-64.692222
+Simón Bolívar International Airport,10.601194,-66.991222
+Pointe-à-Pitre Le Raizet,16.265301,-61.531799
+Luis Munoz Marin International Airport,18.4393997192,-66.0018005371
+Enfidha - Hammamet International Airport,36.075833,10.438611
+Princess Juliana International Airport,18.0410003662,-63.1088981628
+Istanbul New Airport,41.275278,28.751944
+Çukurova Airport,36.895545,35.069381
+Almaty Airport,43.3521003723145,77.0404968261719
+Astana International Airport,51.0222015380859,71.4669036865234
+Manas International Airport,43.0612983704,74.4776000977
+Sary-Arka Airport,49.6707992553711,73.3343963623047
+Heydar Aliyev International Airport,40.4674987792969,50.0466995239258
+Zvartnots International Airport,40.1473007202,44.3959007263
+Tbilisi International Airport,41.6692008972,44.95470047
+Khabarovsk-Novy Airport,48.52799987793,135.18800354004
+Boryspil International Airport,50.3450012207031,30.8946990966797
+Simferopol International Airport,45.0522003173828,33.9751014709473
+Kharkiv International Airport,49.9248008728027,36.2900009155273
+Odessa International Airport,46.4267997741699,30.6765003204346
+Pulkovo Airport,59.8003005981445,30.2625007629395
+Minsk National Airport,53.882499694824,28.030700683594
+Yemelyanovo Airport,56.172901,92.493301
+Tolmachevo Airport,55.012599945068,82.650703430176
+Platov International Airport,47.493888,39.924722
+Sochi International Airport,43.449902,39.9566
+atl,33.137551,-84.375
+JFK,0,0
+JFK,0,0
+Koltsovo Airport,56.743099212646,60.802700042725
+Ashgabat International Airport,37.986801,58.361
+Tashkent International Airport,41.257900238,69.2811965942
+Zhukovsky International Airport,55.553299,38.150002
+Domodedovo International Airport,55.4087982177734,37.9062995910645
+Sheremetyevo International Airport,55.972599,37.4146
+Vnukovo International Airport,55.5914993286,37.2615013123
+Kazan International Airport,55.606201171875,49.278701782227
+Borisoglebskoye Airport,55.86669921875,49.13330078125
+Ufa International Airport,54.557498931885,55.874401092529
+Kurumoch International Airport,53.504901885986,50.16429901123
+Chhatrapati Shivaji International Airport,19.0886993408,72.8678970337
+Dabolim Airport,15.3808002472,73.8313980103
+Bandaranaike International Colombo Airport,7.1807599067688,79.8841018676758
+Mattala Rajapaksa International Airport,6.284467,81.124128
+Phnom Penh International Airport,11.5466003417969,104.84400177002
+Siem Reap International Airport,13.4106998444,103.81300354
+Netaji Subhash Chandra Bose International Airport,22.6546993255615,88.4467010498047
+Hazrat Shahjalal International Airport,23.843347,90.397783
+Hong Kong International Airport,22.308901,113.915001
+Sri Guru Ram Dass Jee International Airport,31.7096004486,74.7973022461
+Indira Gandhi International Airport,28.5665,77.103104
+Macau International Airport,22.149599,113.592003
+Tribhuvan International Airport,27.6966,85.3591
+Kempegowda International Airport,13.1979,77.706299
+Cochin International Airport,10.152,76.401901
+Calicut International Airport,11.1367998123,75.9552993774
+Rajiv Gandhi International Airport,17.2313175201,78.4298553467
+Chennai International Airport,12.9900054931641,80.1692962646484
+Trivandrum International Airport,8.48211956024,76.9200973511
+Malé International Airport,4.19183015823364,73.5290985107422
+Don Mueang International Airport,13.9125995636,100.607002258
+Suvarnabhumi Airport,13.6810998916626,100.747001647949
+Chiang Mai International Airport,18.7667999268,98.962600708
+Phuket International Airport,8.1132,98.316902
+Da Nang International Airport,16.0438995361328,108.198997497559
+Noi Bai International Airport,21.2212009429932,105.806999206543
+Tan Son Nhat International Airport,10.8187999725,106.652000427
+Mandalay International Airport,21.7021999359131,95.977897644043
+Yangon International Airport,16.9073009491,96.1332015991
+Hasanuddin International Airport,-5.06162977218628,119.554000854492
+Ngurah Rai (Bali) International Airport,-8.7481698989868,115.16699981689
+Sentani International Airport,-2.5769500733,140.5160064698
+Juanda International Airport,-7.37982988357544,112.787002563477
+Dominique Edward Osok Airport,-0.894,131.287
+Brunei International Airport,4.94420003890991,114.928001403809
+Soekarno-Hatta International Airport,-6.1255698204,106.65599823
+Kualanamu International Airport,3.642222,98.885278
+Kuala Lumpur International Airport,2.745579957962,101.70999908447
+Singapore Changi Airport,1.35019,103.994003
+Brisbane International Airport,-27.3841991424561,153.117004394531
+Melbourne International Airport,-37.673302,144.843002
+International Airport of Mirabel - Academy of Aeronautics of Canada Flying School training,0,0
+Adelaide International Airport,-34.945,138.531006
+Perth International Airport,-31.940299987793,115.967002868652
+Canberra International Airport,-35.3069000244141,149.195007324219
+Sydney Kingsford Smith International Airport,-33.9460983276367,151.177001953125
+Beijing Capital International Airport,40.0801010131836,116.584999084473
+Baita International Airport,40.851398,111.823997
+Beijing Nanyuan Airport,39.7827987670898,116.388000488281
+Tianjin Binhai International Airport,39.1244010925,117.346000671
+Taiyuan Wusu Airport,37.746898651123,112.627998352051
+Guangzhou Baiyun International Airport,23.3924007415771,113.299003601074
+Changsha Huanghua International Airport,28.1891994476,113.220001221
+Guilin Liangjiang International Airport,25.2180995941162,110.039001464844
+Nanning Wuxu Airport,22.6082992553711,108.171997070313
+Shenzhen Bao'an International Airport,22.6392993927002,113.810997009277
+Zhengzhou Xinzheng International Airport,34.5196990967,113.841003418
+Wuhan Tianhe International Airport,30.7838,114.208
+Haikou Meilan International Airport,19.9349002838135,110.458999633789
+Sanya Phoenix International Airport,18.3029003143311,109.412002563477
+Xi'an Xianyang International Airport,34.447102,108.751999
+Chinggis Khaan International Airport,47.843102,106.766998
+Kunming Changshui International Airport,25.1019444,102.9291667
+Airport,0,0
+Xiamen Gaoqi International Airport,24.5440006256104,118.127998352051
+Fuzhou Changle International Airport,25.9351005554199,119.66300201416
+Hangzhou Xiaoshan International Airport,30.2294998168945,120.43399810791
+Yaoqiang Airport,36.8572006225586,117.216003417969
+Ningbo Lishe International Airport,29.8267002105713,121.46199798584
+Nanjing Lukou Airport,31.742000579834,118.861999511719
+Shanghai Pudong International Airport,31.1434001922607,121.805000305176
+Shanghai Hongqiao International Airport,31.1979007720947,121.335998535156
+Wenzhou Longwan International Airport,27.912201,120.851997
+Chongqing Jiangbei International Airport,29.7192001342773,106.641998291016
+Longdongbao Airport,26.5384998321533,106.801002502441
+Chengdu Shuangliu International Airport,30.5785007476807,103.946998596191
+Ürümqi Diwopu International Airport,43.9071006774902,87.4741973876953
+Taiping Airport,45.6234016418457,126.25
+Zhoushuizi Airport,38.9656982421875,121.539001464844
+Taoxian Airport,41.6398010253906,123.483001708984
