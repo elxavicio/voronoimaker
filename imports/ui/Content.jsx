@@ -30,7 +30,6 @@ class Content extends React.Component {
   }
 
   onCSVLoaded = results => {
-    console.log(results);
     const { fields } = results.meta;
     const { data } = results;
 
@@ -43,7 +42,6 @@ class Content extends React.Component {
         fields[i].toLowerCase().indexOf("lng") !== -1) &&
         (lonField = i);
     }
-    console.log(fields[latField], fields[lonField]);
 
     // Extract only the lat and long fields
     let rawPoints = [];
@@ -59,20 +57,19 @@ class Content extends React.Component {
     const filteredPoints = rawPoints.filter(
       item => !isNaN(item[0]) && !isNaN(item[1])
     );
-    for (let i = 0; i < filteredPoints.length; i++) {
-      (filteredPoints[i][1] > 90 || filteredPoints[i][1] < -90) &&
-        console.log(filteredPoints[i]);
-    }
 
     // Get lat long bounds from data
-    // const leafletBounds = latLngBounds([filteredPoints]);
+    const leafletBounds = latLngBounds([filteredPoints]);
 
     let map = new Mapbox.Map({
       container: "map",
-      // bounds: [
-      //   [leafletBounds._southWest.lng, leafletBounds._southWest.lat],
-      //   [leafletBounds._northEast.lng, leafletBounds._northEast.lat]
-      // ],
+      bounds: [
+        [leafletBounds._southWest.lat, leafletBounds._southWest.lng],
+        [leafletBounds._northEast.lat, leafletBounds._northEast.lng]
+      ],
+      fitBoundsOptions: {
+        padding: 200
+      },
       renderWorldCopies: false,
       style: "mapbox://styles/mapbox/light-v9",
       scrollZoom: true
@@ -89,7 +86,6 @@ class Content extends React.Component {
         const { x, y } = map.project(filteredPoints[i]);
         projectedPoints.push([x, y]);
       }
-      console.log(projectedPoints);
 
       const delaunay = d3delaunay.Delaunay.from(projectedPoints);
       const voronoi = delaunay.voronoi([0, 0, width, height]);
@@ -116,10 +112,6 @@ class Content extends React.Component {
           .attr("fill", "indianred")
       );
     });
-
-    // TODO adjust map view according to points we are dispalying
-    // map.fitBounds(mapBounds);
-    // map.setZoom(map.getBoundsZoom(mapBounds));
 
     this.setState({ hideMap: false });
   };
