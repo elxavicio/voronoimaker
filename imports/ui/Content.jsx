@@ -194,8 +194,8 @@ class Content extends React.Component {
         <div
           id="map"
           style={{
-            marginTop: "5em",
-            height: "600px"
+            marginTop: "4em",
+            height: "1000px"
           }}
         />
       </div>
